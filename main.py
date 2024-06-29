@@ -57,7 +57,7 @@ dropout = args.dropout_rate
 if __name__ == '__main__':
     try:
         before_start = datetime.now().timestamp()
-        model = get_model(sample_graph)
+        model = get_model(sample_graph, lr=learning_rate, dropout=dropout)
         print(f'Model Architecture:\n{model.summary()}')
         h = model.fit(
             loader_tr,
