@@ -2,7 +2,7 @@ import os
 from datetime import datetime
 from Preproc.utilities import rawData_collate, sliding_window_data, data_split, MyDataset
 from Preproc.loader import DataGenerator
-from model import get_model
+from Model.model import get_model
 import argparse
 import pandas as pd
 import numpy as np
